@@ -15,6 +15,7 @@
 		C6789BA61F07BA7700269A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6789BA41F07BA7700269A3A /* LaunchScreen.storyboard */; };
 		C6789BB11F07BA7700269A3A /* Gil_Vacation_PhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6789BB01F07BA7700269A3A /* Gil_Vacation_PhotosTests.swift */; };
 		C6789BBC1F07BA7700269A3A /* Gil_Vacation_PhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6789BBB1F07BA7700269A3A /* Gil_Vacation_PhotosUITests.swift */; };
+		C6789BCA1F16EADD00269A3A /* PhotoAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6789BC91F16EADD00269A3A /* PhotoAuthorization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C6789BB71F07BA7700269A3A /* Gil Vacation PhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gil Vacation PhotosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6789BBB1F07BA7700269A3A /* Gil_Vacation_PhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gil_Vacation_PhotosUITests.swift; sourceTree = "<group>"; };
 		C6789BBD1F07BA7700269A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6789BC91F16EADD00269A3A /* PhotoAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoAuthorization.swift; path = "Gil Vacation Photos/PhotoAuthorization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C6789B8C1F07BA7700269A3A = {
 			isa = PBXGroup;
 			children = (
+				C6789BC91F16EADD00269A3A /* PhotoAuthorization.swift */,
 				C6789B971F07BA7700269A3A /* Gil Vacation Photos */,
 				C6789BAF1F07BA7700269A3A /* Gil Vacation PhotosTests */,
 				C6789BBA1F07BA7700269A3A /* Gil Vacation PhotosUITests */,
@@ -267,6 +270,7 @@
 			files = (
 				C6789BA11F07BA7700269A3A /* Gil_Vacation_Photos.xcdatamodeld in Sources */,
 				C6789B9B1F07BA7700269A3A /* ViewController.swift in Sources */,
+				C6789BCA1F16EADD00269A3A /* PhotoAuthorization.swift in Sources */,
 				C6789B991F07BA7700269A3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +522,7 @@
 				C6789BC21F07BA7700269A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6789BC31F07BA7700269A3A /* Build configuration list for PBXNativeTarget "Gil Vacation PhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				C6789BC51F07BA7700269A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6789BC61F07BA7700269A3A /* Build configuration list for PBXNativeTarget "Gil Vacation PhotosUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +540,7 @@
 				C6789BC81F07BA7700269A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
