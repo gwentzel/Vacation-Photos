@@ -50,7 +50,7 @@
 		C6789BB71F07BA7700269A3A /* Gil Vacation PhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gil Vacation PhotosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6789BBB1F07BA7700269A3A /* Gil_Vacation_PhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gil_Vacation_PhotosUITests.swift; sourceTree = "<group>"; };
 		C6789BBD1F07BA7700269A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6789BC91F16EADD00269A3A /* PhotoAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoAuthorization.swift; path = "Gil Vacation Photos/PhotoAuthorization.swift"; sourceTree = "<group>"; };
+		C6789BC91F16EADD00269A3A /* PhotoAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAuthorization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,6 @@
 		C6789B8C1F07BA7700269A3A = {
 			isa = PBXGroup;
 			children = (
-				C6789BC91F16EADD00269A3A /* PhotoAuthorization.swift */,
 				C6789B971F07BA7700269A3A /* Gil Vacation Photos */,
 				C6789BAF1F07BA7700269A3A /* Gil Vacation PhotosTests */,
 				C6789BBA1F07BA7700269A3A /* Gil Vacation PhotosUITests */,
@@ -103,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C6789B981F07BA7700269A3A /* AppDelegate.swift */,
+				C6789BC91F16EADD00269A3A /* PhotoAuthorization.swift */,
 				C6789B9A1F07BA7700269A3A /* ViewController.swift */,
 				C6789B9C1F07BA7700269A3A /* Main.storyboard */,
 				C6789BA21F07BA7700269A3A /* Assets.xcassets */,

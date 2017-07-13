@@ -17,28 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vfu-RK-xnA"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeF-Uh-sNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1620" y="-128"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wHc-ty-WaC">
-            <objects>
-                <viewController id="x21-x7-9WH" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mUR-sM-OC9"/>
-                        <viewControllerLayoutGuide type="bottom" id="1BO-RI-2ql"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TAy-wW-VFN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OmV-Pf-iBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-700" y="-511"/>
+            <point key="canvasLocation" x="-1590" y="-130"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -59,10 +44,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tmK-z3-h1k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="-484"/>
+            <point key="canvasLocation" x="-606" y="-363"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rkn-yV-uCY">
