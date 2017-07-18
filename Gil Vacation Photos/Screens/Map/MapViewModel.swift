@@ -7,10 +7,11 @@
 //
 import CoreLocation
 import Foundation
+import Photos
 
 struct MapViewModel {
   var coordinates = [CLLocation]()
-
+  var photos = [PHFetchResult<PHAsset>]()
   func hasPermission() -> Bool {
     let status = CLLocationManager.authorizationStatus()
     switch status {

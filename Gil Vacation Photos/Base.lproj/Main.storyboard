@@ -78,18 +78,32 @@
                                     <outletCollection property="gestureRecognizers" destination="7PV-Gf-jbA" appends="YES" id="uzz-Kj-ee8"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLk-Pa-5fw">
+                                <rect key="frame" x="27" y="636" width="46" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Show these photos"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show these Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLa-FY-Ggl">
+                                <rect key="frame" x="55" y="638" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="tmK-z3-h1k"/>
                     <connections>
+                        <outlet property="ShowPhotosButton" destination="DLk-Pa-5fw" id="bVc-Sw-VUU"/>
                         <outlet property="mapView" destination="wfy-3g-RLC" id="rEt-k9-71Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="7PV-Gf-jbA"/>
             </objects>
-            <point key="canvasLocation" x="199" y="37"/>
+            <point key="canvasLocation" x="197.59999999999999" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>

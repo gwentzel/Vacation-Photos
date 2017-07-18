@@ -10,9 +10,10 @@ import Foundation
 import Photos
 
 struct PhotoViewModel {
-  var selectedPhotos = [UIImage]()
+  var selectedPhotos = [PHFetchResult<PHAsset>]()
   var selectedCoordinates = [CLLocation]()
-
+  //var  galleryImages : PHFetchResult<PHAsset>!
+  var selectedPhotoIDs =  [String]()
   func hasPermission() -> Bool {
     let status = PHPhotoLibrary.authorizationStatus()
     switch status {

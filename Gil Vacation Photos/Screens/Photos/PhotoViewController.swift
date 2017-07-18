@@ -38,7 +38,8 @@ class PhotoViewController: UIViewController  {
         if let coordinate = result.location?.coordinate {
           print("coordinate \(coordinate)")
           self.viewModel.selectedCoordinates.append(result.location!)
-          // viewModel.selectedPhotos.append()
+          self.viewModel.selectedPhotos.append(PHFetchResult<PHAsset>())
+    //   self.viewModel.galleryImages = PHAsset.fetchAssets(with: <#T##PHAssetMediaType#>.image, options: nil)
         }
       }
       DispatchQueue.main.async { // 2
@@ -99,6 +100,7 @@ extension PhotoViewController {
     print("segue \(String(describing: segue.identifier))")
     if let mapViewController = segue.destination as? MapViewController {
       mapViewController.viewModel.coordinates = viewModel.selectedCoordinates
+      mapViewController.viewModel.photos =  viewModel.selectedPhotos
     }
   }
 }

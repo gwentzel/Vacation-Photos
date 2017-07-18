@@ -53,7 +53,18 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+
   }
+  @IBOutlet weak var ShowPhotosButton: UIButton!
+  func freezeMap () {
+    self.mapView.isUserInteractionEnabled = false}
+  // now check photo coordinates against  MKMapRect
+  //func photosOnMap(){
+    //for i in 0..<self.PhotoViewModel.selectedCoordinates.count{
+      // try going to PhotoviewController now
+   // }
+ // }
+
 }
 
 extension MapViewModel {
