@@ -9,6 +9,9 @@ import CoreLocation
 import Foundation
 import MapKit
 import UIKit
+import Photos
+import CoreGraphics
+import PhotosUI
 
 final class MapViewController: UIViewController, CLLocationManagerDelegate {
   @IBOutlet weak var mapView: MKMapView!
@@ -56,8 +59,8 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
 
   }
   @IBOutlet weak var ShowPhotosButton: UIButton!
-  func freezeMap () {
-    self.mapView.isUserInteractionEnabled = false}
+  //func freezeMap () {
+   // self.mapView.isUserInteractionEnabled = false}
   // now check photo coordinates against  MKMapRect
   //func photosOnMap(){
     //for i in 0..<self.PhotoViewModel.selectedCoordinates.count{
@@ -71,4 +74,16 @@ extension MapViewModel {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     print("location updated \(locations)")
   }
+}
+func getAssetThumbnail (asset: PHAsset) -> UIImage {
+  let manager = PHImageManager.default()
+  let option =  PHImageRequestOptions()
+  var thumbnail = UIImage()
+  let size = CGSize(width: 100, height: 100)
+  option.isSynchronous = true
+  manager.requestImage(for:asset, targetSize: size, contentMode: .aspectFit, options: option, resultHandler: {(result, info) ->Void in
+    thumbnail = result!
+  })
+
+return thumbnail
 }
