@@ -10,4 +10,4 @@ in the simulator test data. Future version would require a different presentatio
 but this illustrates the app is properly functioning with the simulator data.
 
 The map can be scrolled to those locations to see the photos.
-To run, buid and run in XCode and follow the prompts.
+To run, build and run in XCode and follow the prompts.
