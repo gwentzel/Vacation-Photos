@@ -12,6 +12,8 @@ import Photos
 struct MapViewModel {
   var coordinates = [CLLocation]()
   var photos = [PHFetchResult<PHAsset>]()
+  var  assets = [PHAsset]()
+  
   func hasPermission() -> Bool {
     let status = CLLocationManager.authorizationStatus()
     switch status {

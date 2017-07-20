@@ -11,6 +11,7 @@ import Photos
 
 struct PhotoViewModel {
   var selectedPhotos = [PHFetchResult<PHAsset>]()
+  var selectedAssets = [PHAsset]()
   var selectedCoordinates = [CLLocation]()
   //var  galleryImages : PHFetchResult<PHAsset>!
   var selectedPhotoIDs =  [String]()

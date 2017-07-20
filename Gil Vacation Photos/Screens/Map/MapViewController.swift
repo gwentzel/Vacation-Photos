@@ -13,7 +13,7 @@ import Photos
 import CoreGraphics
 import PhotosUI
 
-final class MapViewController: UIViewController, CLLocationManagerDelegate {
+final class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
   @IBOutlet weak var mapView: MKMapView!
 
   var viewModel = MapViewModel()
@@ -26,6 +26,8 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    mapView.delegate = self
 
     if viewModel.hasPermission() {
       print("got perms!")
@@ -49,7 +51,9 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
     print("draw annotations \(count)")
     for i in 0 ..< count {
       let location = viewModel.coordinates[i]
-      let annotation = MapPin(coordinate: location.coordinate, title: "", subtitle: "")
+      let asset = viewModel.assets[i]
+      let image = getAssetThumbnail(asset: asset)
+      let annotation = MapPin(coordinate: location.coordinate, title: "", subtitle: "", image: image)
       mapView.addAnnotation(annotation)
     }
   }
@@ -70,6 +74,19 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
 
 }
 
+extension MapViewController {
+  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    print("annotation is about to render")
+    let pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: "MapPin")
+    pinView.canShowCallout = true
+    if let pin = annotation as? MapPin {
+      print("annotation is a MapPin")
+      pinView.image = pin.image
+    }
+    return pinView
+  }
+}
+
 extension MapViewModel {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     print("location updated \(locations)")
@@ -82,8 +99,8 @@ func getAssetThumbnail (asset: PHAsset) -> UIImage {
   let size = CGSize(width: 100, height: 100)
   option.isSynchronous = true
   manager.requestImage(for:asset, targetSize: size, contentMode: .aspectFit, options: option, resultHandler: {(result, info) ->Void in
+    print ("image loaded")
     thumbnail = result!
   })
-
-return thumbnail
+  return thumbnail
 }
