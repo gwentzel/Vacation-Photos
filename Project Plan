@@ -1,0 +1,10 @@
+1) Get photo authorization
+2) Load photos button
+Build array of photo coordinates
+Display map aand pin photos on their map locations
+
+
+Screens/views: 
+- Authorization
+- Load photos button
+- Scrolling Mapview with photos
